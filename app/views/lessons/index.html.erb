@@ -1,0 +1,6 @@
+<% @lessons.each do |lesson| %>
+  <div class="lesson_wrapper">
+    <h2 class="title"><%= link_to lesson.title, lesson %></h2>
+    <p class="date"><%= lesson.created_at.strftime("%B, %d, %Y") %></p>
+  </div>
+<% end %>
